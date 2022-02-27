@@ -13,7 +13,6 @@ function Display(props) {
     <>
       <Card
         sx={{
-          maxWidth: '600px',
           overflow: 'scroll',
           maxHeight: '400px',
           minHeight: '400px',
@@ -24,7 +23,7 @@ function Display(props) {
             <TableHead>
               <TableRow>
                 <TableCell>
-                  <h3 style={{ fontSize: '20px' }}>Student Name List</h3>
+                  <p style={{ fontSize: '15px' }}>Student Name List</p>
                 </TableCell>
               </TableRow>
             </TableHead>

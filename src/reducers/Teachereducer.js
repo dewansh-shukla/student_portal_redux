@@ -9,7 +9,6 @@ export const teacherSlice = createSlice({
         subject: action.payload.sub,
       })
     },
-    deleteteacher: (state) => {},
   },
 })
 

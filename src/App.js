@@ -6,12 +6,13 @@ import Batch from './components/Batch'
 import Assign from './components/Assign'
 import Display from './components/Display'
 import BatchList from './components/BatchList'
+import TeacherList from './components/TeacherList'
 
 function App() {
   return (
     <>
       <h1 style={{ textAlign: 'center' }}>School Portal</h1>
-      <Grid container spacing={3} sx={{ marginTop: '20px', padding: '30px' }}>
+      <Grid container spacing={2} sx={{ marginTop: '20px', padding: '30px' }}>
         <Grid item xl={4} md={3}>
           <Student />
         </Grid>
@@ -26,6 +27,9 @@ function App() {
         </Grid>
         <Grid item xl={4} md={3} sm={12} xs={12} lg={4}>
           <Assign />
+        </Grid>
+        <Grid item xl={4} md={3} sm={12} xs={12} lg={4}>
+          <TeacherList />
         </Grid>
         <Grid item xl={4} md={3} sm={12} xs={12} lg={4}>
           <BatchList />
