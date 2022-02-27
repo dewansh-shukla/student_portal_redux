@@ -15,7 +15,6 @@ function TeacherList() {
     <>
       <Card
         sx={{
-          maxWidth: '600px',
           overflow: 'scroll',
           maxHeight: '400px',
           minHeight: '400px',
@@ -27,8 +26,8 @@ function TeacherList() {
               <TableCell>
                 <p>Teachers Name</p>
               </TableCell>
-              <TableCell align='right'>
-                <p>Teachers Name</p>
+              <TableCell>
+                <p>Subject</p>
               </TableCell>
             </TableRow>
           </TableHead>

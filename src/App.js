@@ -11,27 +11,35 @@ import TeacherList from './components/TeacherList'
 function App() {
   return (
     <>
-      <h1 style={{ textAlign: 'center' }}>School Portal</h1>
+      <h1
+        style={{
+          textAlign: 'center',
+          fontWeight: 'bolder',
+          fontFamily: 'cursive',
+        }}
+      >
+        Students Portal
+      </h1>
       <Grid container spacing={2} sx={{ marginTop: '20px', padding: '30px' }}>
-        <Grid item xl={4} md={3}>
+        <Grid item xl={4} md={4} lg={4} xs={12}>
           <Student />
         </Grid>
-        <Grid item xl={4} md={3} sm={12} lg={4} xs={12}>
+        <Grid item xl={4} md={4} sm={12} lg={4} xs={12}>
           <Teacher />
         </Grid>
-        <Grid item xl={4} md={3} sm={12} xs={12} lg={4}>
+        <Grid item xl={4} md={4} sm={12} xs={12} lg={4}>
           <Display />
         </Grid>
-        <Grid item xl={4} md={3} sm={12} xs={12} lg={4}>
+        <Grid item xl={4} md={4} sm={12} xs={12} lg={4}>
           <Batch />
         </Grid>
-        <Grid item xl={4} md={3} sm={12} xs={12} lg={4}>
+        <Grid item xl={4} md={4} sm={12} xs={12} lg={4}>
           <Assign />
         </Grid>
-        <Grid item xl={4} md={3} sm={12} xs={12} lg={4}>
+        <Grid item xl={4} md={4} sm={12} xs={12} lg={4}>
           <TeacherList />
         </Grid>
-        <Grid item xl={4} md={3} sm={12} xs={12} lg={4}>
+        <Grid item xl={4} md={4} sm={12} xs={12} lg={4}>
           <BatchList />
         </Grid>
       </Grid>
