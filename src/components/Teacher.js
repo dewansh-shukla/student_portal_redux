@@ -12,7 +12,7 @@ import {
 } from '@mui/material'
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { addteacher, deleteteacher } from '../reducers/Teachereducer'
+import { addteacher } from '../reducers/Teachereducer'
 function Teacher() {
   const [subject, setSubject] = React.useState('')
   const [teacher, setTeacher] = useState('')

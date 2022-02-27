@@ -43,9 +43,3 @@ function Display(props) {
 }
 
 export default Display
-
-{
-  /* {students.map((student) => {
-          return <p>{student.name}</p>
-        })} */
-}
