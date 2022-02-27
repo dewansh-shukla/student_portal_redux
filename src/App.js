@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { Grid } from '@mui/material'
+import Student from './components/Student'
+import Teacher from './components/Teacher'
+import Batch from './components/Batch'
+import Assign from './components/Assign'
+import Display from './components/Display'
+import BatchList from './components/BatchList'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <h1 style={{ textAlign: 'center' }}>School Portal</h1>
+      <Grid container spacing={3} sx={{ marginTop: '20px', padding: '30px' }}>
+        <Grid item xl={4} md={3}>
+          <Student />
+        </Grid>
+        <Grid item xl={4} md={3} sm={12} lg={4} xs={12}>
+          <Teacher />
+        </Grid>
+        <Grid item xl={4} md={3} sm={12} xs={12} lg={4}>
+          <Display />
+        </Grid>
+        <Grid item xl={4} md={3} sm={12} xs={12} lg={4}>
+          <Batch />
+        </Grid>
+        <Grid item xl={4} md={3} sm={12} xs={12} lg={4}>
+          <Assign />
+        </Grid>
+        <Grid item xl={4} md={3} sm={12} xs={12} lg={4}>
+          <BatchList />
+        </Grid>
+      </Grid>
+    </>
+  )
 }
 
-export default App;
+export default App
